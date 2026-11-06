@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio - Veterinaria Huellitas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <div th:replace="~{plantilla :: header}"></div>
+
+    <!-- NAVBAR -->
+    <div th:replace="~{plantilla :: navbar}"></div>
+
+    <main class="container mt-5">
+
+        <!-- BIENVENIDA -->
+        <section class="text-center mb-5">
+
+            <h2 class="text-success">
+                Bienvenidos a Veterinaria Huellitas
+            </h2>
+
+            <p class="lead">
+                Nos dedicamos al bienestar y cuidado
+                de tus mascotas, ofreciendo atención
+                veterinaria con cariño y responsabilidad.
+            </p>
+
+        </section>
+
+        <!-- INFORMACIÓN DE LA CLÍNICA -->
+        <section class="row mb-5">
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+
+                        <h4 class="text-success">
+                            Horarios
+                        </h4>
+
+                        <p>Lunes a viernes: 8:00 a.m. - 6:00 p.m.</p>
+                        <p>Sábados: 9:00 a.m. - 3:00 p.m.</p>
+                        <p>Domingos: Cerrado</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+
+                        <h4 class="text-success">
+                            Ubicación
+                        </h4>
+
+                        <p>
+                            San José, Costa Rica
+                        </p>
+
+                        <p>
+                            Atención para perros y gatos.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+
+                        <h4 class="text-success">
+                            Especialidades
+                        </h4>
+
+                        <p>Consultas generales</p>
+                        <p>Vacunación</p>
+                        <p>Estética y cuidado</p>
+                        <p>Cirugías</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PROMOCIÓN DEL MES -->
+        <section class="mb-5">
+
+            <div class="card border-success shadow">
+
+                <div class="card-header bg-success text-white">
+                    <h3 class="mb-0">
+                        Promoción del Mes
+                    </h3>
+                </div>
+
+                <div class="card-body">
+
+                    <h4 class="text-success">
+                        Paquete Cachorro Feliz
+                    </h4>
+
+                    <p>
+                        Durante este mes ofrecemos un paquete
+                        especial para los cachorros.
+                    </p>
+
+                    <ul>
+                        <li>Consulta veterinaria general</li>
+                        <li>Revisión de peso y crecimiento</li>
+                        <li>Orientación sobre vacunación</li>
+                        <li>Consejos de alimentación</li>
+                    </ul>
+
+                    <p class="fw-bold">
+                        ¡Cuida la salud de tu cachorro!
+                    </p>
+
+                    <a th:href="@{/contacto}"
+                       class="btn btn-success">
+                        Solicitar información
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- VIDEO -->
+        <section class="text-center mb-5">
+
+            <h3 class="text-success mb-3">
+                Consejos para el cuidado de tus mascotas
+            </h3>
+
+            <div class="ratio ratio-16x9">
+
+                <iframe
+                    src="https://www.youtube.com/embed/placeholder"
+                    title="Cuidado de mascotas"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div th:replace="~{plantilla :: footer}"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
+
